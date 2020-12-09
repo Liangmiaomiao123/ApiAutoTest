@@ -2,6 +2,25 @@
 
 脚本层的公共方法
 '''
+import sys
+
+
+def get_project_path():
+    '''
+    获取工程路径
+    :return: 当前工程路径，比如E:\ApiAutoTest\ZongHe\
+    '''
+    # __file__ 存储着当前文件的路径
+    path = os.path.realpath(__file__)
+    # 上一级目录
+    path = os.path.dirname(path)
+    # 再上一级目录
+    path = os.path.dirname(path)
+    path = os.path.dirname(path)
+    return path + "\\"
+
+print(get_project_path())
+sys.path.append(get_project_path())
 
 import pytest
 from ZongHe.caw import DataRead

@@ -17,7 +17,7 @@ def register(url,basequests,data):
     return r
 
 def user_list(url,basequests):
-    url1=url+"futureloan/mvc/api/member/register/list"
+    url1=url+"futureloan/mvc/api/member/list"
     r1=basequests.post(url1)
     return r1
 

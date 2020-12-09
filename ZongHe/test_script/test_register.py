@@ -38,6 +38,9 @@ def test_register_success(success_data,url,db,baserequests):
     #获取手机号码
     mobile=success_data['data']['mobilephone']
     print(mobile)
+
+    # DbOp.delete_user(db, mobile)
+
     r=Member.register(url,baserequests,success_data['data'])
     print(r.text)
 
