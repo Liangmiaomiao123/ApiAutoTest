@@ -1,0 +1,12 @@
+
+
+
+-data:{"mobilephone":"16129938653","pwd":"123456","regname":""}
+except:{"code":"10001","data":{},"msg":"注册成功","status":1}
+
+-data:{"mobilephone":"16129938653","pwd":"123456","regname":"gf"}
+except:{"code":"10001","data":{},"msg":"注册成功","status":1}
+
+-data:{"mobilephone":"16129938653","pwd":"123456654323456789","regname":""}
+except:{"code":"10001","data":{},"msg":"注册成功","status":1}
+
