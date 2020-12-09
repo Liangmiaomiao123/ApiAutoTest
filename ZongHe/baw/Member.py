@@ -24,7 +24,7 @@ def user_list(url,basequests):
 
 def login(url,basequests,data):
     url2=url+"/futureloan/mvc/api/member/login"
-    r2=basequests.post(url2)
+    r2=basequests.post(url2,data=data)
     return r2
 
 if __name__ == '__main__':

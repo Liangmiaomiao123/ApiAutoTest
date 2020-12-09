@@ -41,5 +41,6 @@ def test_login(register,url,baserequests,db,login_data):
 
     #检查结果
     assert r.json()['msg']==login_data['expect']['msg']
+
     assert str(r.json()['code'])==str(login_data['expect']['code'])
 
