@@ -2,6 +2,7 @@
 
 脚本层的公共方法
 '''
+import os
 import sys
 
 
