@@ -54,9 +54,6 @@ def test_register_success(success_data,url,db,baserequests):
     #查询用户，检查手机号在返回的结果中
 
     r=Member.user_list(url,baserequests)
-
-    print(r)
-    print(r.text)
     assert mobile in r.text
 
 

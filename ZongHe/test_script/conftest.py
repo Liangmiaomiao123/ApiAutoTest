@@ -2,6 +2,7 @@
 
 脚本层的公共方法
 '''
+import pytest
 import os
 import sys
 
@@ -23,7 +24,7 @@ def get_project_path():
 print(get_project_path())
 sys.path.append(get_project_path())
 
-import pytest
+
 from ZongHe.caw import DataRead
 
 from ZongHe.caw.BaseRequest import BaseRequests
@@ -45,7 +46,6 @@ def db():
 
     print(type(info))
     print(type(eval(info)))
-
     return eval(info) #将字符串解析成字典
 
 
